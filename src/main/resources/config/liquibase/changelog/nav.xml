@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <property name="now" value="now()" dbms="h2"/>
+
+    <property name="now" value="now()" dbms="mysql"/>
+    <property name="autoIncrement" value="true"/>
+
+    <property name="floatType" value="float4" dbms="postgresql, h2"/>
+    <property name="floatType" value="float" dbms="mysql, oracle, mssql"/>
+
+    <!--
+        Added the entity Grossdeduct.
+    -->
+    <changeSet id="36" author="jhipster">
+        <createTable tableName="nav">
+            <column name="id" type="bigint" autoIncrement="${autoIncrement}">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="amc_code" type="varchar(25)">
+                <constraints nullable="true" />
+            </column>
+            <column name="schemecode" type="varchar(100)">
+                <constraints nullable="true" />
+            </column>
+            <column name="isindivpayoutisingrowth" type="varchar(500)">
+                <constraints nullable="true" />
+            </column>
+            <column name="isindivreinvestment" type="varchar(500)">
+                <constraints nullable="true" />
+            </column>
+            <column name="schemename" type="varchar(500)">
+                <constraints nullable="true" />
+            </column>
+            <column name="day1" type="varchar(500)">
+                <constraints nullable="true" />
+            </column>
+            
+            <column name="date" type="varchar(20)">
+                <constraints nullable="true" />
+            </column>
+            
+            <column name="day2" type="varchar(20)">
+                <constraints nullable="true" />
+            </column>
+            
+            <column name="day3" type="varchar(20)">
+                <constraints nullable="true" />
+            </column>
+            
+            <column name="day4" type="varchar(20)">
+                <constraints nullable="true" />
+            </column>
+            
+            <column name="day5" type="varchar(20)">
+                <constraints nullable="true" />
+            </column>
+            
+            <column name="day6" type="varchar(20)">
+                <constraints nullable="true" />
+            </column>
+            
+            <column name="day7" type="varchar(20)">
+                <constraints nullable="true" />
+            </column>
+            
+            <column name="day8" type="varchar(20)">
+                <constraints nullable="true" />
+            </column>
+            
+            <column name="day9" type="varchar(20)">
+                <constraints nullable="true" />
+            </column>
+            
+            <column name="day10" type="varchar(20)">
+                <constraints nullable="true" />
+            </column>
+            
+            <column name="day11" type="varchar(20)">
+                <constraints nullable="true" />
+            </column>
+            
+            <column name="day12" type="varchar(20)">
+                <constraints nullable="true" />
+            </column>
+            
+            <column name="day13" type="varchar(20)">
+                <constraints nullable="true" />
+            </column>
+            
+            <column name="day14" type="varchar(20)">
+                <constraints nullable="true" />
+            </column>
+            
+            <column name="day15" type="varchar(20)">
+                <constraints nullable="true" />
+            </column>
+            
+            <column name="day16" type="varchar(20)">
+                <constraints nullable="true" />
+            </column>
+            
+            <column name="day17" type="varchar(20)">
+                <constraints nullable="true" />
+            </column>
+            
+            <column name="day18" type="varchar(20)">
+                <constraints nullable="true" />
+            </column>
+            
+            <column name="day19" type="varchar(20)">
+                <constraints nullable="true" />
+            </column>
+            
+            <column name="day20" type="varchar(20)">
+                <constraints nullable="true" />
+            </column>
+            
+            <column name="day21" type="varchar(20)">
+                <constraints nullable="true" />
+            </column>
+            
+            <column name="day22" type="varchar(20)">
+                <constraints nullable="true" />
+            </column>
+            
+            <column name="day23" type="varchar(20)">
+                <constraints nullable="true" />
+            </column>
+            
+            <column name="day24" type="varchar(20)">
+                <constraints nullable="true" />
+            </column>
+            
+            <column name="day25" type="varchar(20)">
+                <constraints nullable="true" />
+            </column>
+            
+            <column name="day26" type="varchar(20)">
+                <constraints nullable="true" />
+            </column>
+            
+            <column name="day27" type="varchar(20)">
+                <constraints nullable="true" />
+            </column>
+            
+            <column name="day28" type="varchar(20)">
+                <constraints nullable="true" />
+            </column>
+            
+            <column name="day29" type="varchar(20)">
+                <constraints nullable="true" />
+            </column>
+            
+            <column name="day30" type="varchar(20)">
+                <constraints nullable="true" />
+            </column>
+            
+            <column name="day31" type="varchar(20)">
+                <constraints nullable="true" />
+            </column>
+           </createTable>
+        
+    </changeSet>
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here, do not remove-->
+</databaseChangeLog>

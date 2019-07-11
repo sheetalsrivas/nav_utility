@@ -1,0 +1,31 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.valuequo.buckswise"
+    },
+    "jhipsterVersion": "4.14.1",
+    "baseName": "nav_utility",
+    "packageName": "com.valuequo.buckswise",
+    "packageFolder": "com/valuequo/buckswise",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSocialSignIn": false,
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "acf73ddbedc31f3a59e6f11d7e5e3a3d82fa8cd5",
+    "enableTranslation": false,
+    "applicationType": "monolith",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "clientPackageManager": "yarn",
+    "skipClient": true
+  }
+}
