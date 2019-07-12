@@ -74,7 +74,10 @@ public class AmfiService {
                 String schemeCode = amfi.getSchemeCode();
                 String date = amfi.getDate();
                 String nav = amfi.getDay1();
-
+				if (nav.equals("N.A.")) {
+                    System.out.println("under if"  + nav);
+                    nav = "0";
+                }
                 Date day = new Date(date);
                 int dayValue = day.getDate();
                 String dayVal = Integer.toString(dayValue);
